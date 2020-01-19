@@ -17,6 +17,8 @@ private:
 
     void (*_on_long_press)() = nullptr;
 
+    void (*_on_llong_press)() = nullptr;
+
     void (*_on_press)() = nullptr;
 
     void (*_on_release)() = nullptr;
@@ -29,6 +31,10 @@ public:
     NIButton *on_short_press(void (*_on_pressed)());
 
     NIButton *long_press(long delay);
+
+    NIButton *llong_press(long delay);
+
+    NIButton *on_llong_press(void (*_on_pressed)());
 
     NIButton *on_long_press(void (*_on_pressed)());
 
